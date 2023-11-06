@@ -29,7 +29,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [FormsModule],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -21,8 +21,12 @@ export class CartComponent {
 
   onSubmit() {
     this.items = this.cartService.clearCart();
-    console.warn('Your order has been submitted', this.checkoutForm.value);
-    window.alert('Your order has been submitted');
+    if (this.checkoutForm.value.name && this.checkoutForm.value.address) {
+      console.warn('Your order has been submitted', this.checkoutForm.value);
+      window.alert('your order has been submitted');
+    } else {
+      window.alert('name and address Fields are required');
+    }
     this.checkoutForm.reset();
   }
 }
