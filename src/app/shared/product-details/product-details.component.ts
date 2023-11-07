@@ -10,6 +10,8 @@ import { CartService } from '../product-list/cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
+  color = 'yellow';
+  condition = false;
   constructor(
     private router: ActivatedRoute,
     private cartService: CartService

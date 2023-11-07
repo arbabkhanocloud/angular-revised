@@ -11,6 +11,8 @@ import { CartComponent } from './shared/components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shared/shipping/shipping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HighlightDirective } from './directives/highlight.directive';
+import { AppUnlessDirective } from './directives/app-unless.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TopBarComponent,
     CartComponent,
     ShippingComponent,
+    HighlightDirective,
+    AppUnlessDirective,
   ],
   imports: [
     BrowserModule,
