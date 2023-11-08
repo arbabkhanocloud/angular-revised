@@ -1,6 +1,16 @@
-<app-top-bar></app-top-bar>
+<!-- <app-top-bar></app-top-bar>
 <div class="angular-revised">
   <h1>{{title|uppercase}}</h1>
 </div>
 <router-outlet>
-</router-outlet>
+</router-outlet> -->
+
+<div class="container">
+  <input type="text" #input>
+  <button (click)="onSubmit(input)">Submit</button>
+  <app-parent [value]="inputText" *ngIf="destroy">
+    <h4>this is projected content: {{inputText}}</h4>
+  </app-parent>
+  <br><br>
+  <button (click)="onDestroy()">hello</button>
+</div>

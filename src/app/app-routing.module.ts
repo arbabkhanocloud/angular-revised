@@ -6,23 +6,22 @@ import { CartComponent } from './shared/components/cart/cart.component';
 import { ShippingComponent } from './shared/shipping/shipping.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: ProductListComponent,
-  },
-  {
-    path: 'products/:productId',
-    component: ProductDetailsComponent,
-  },
-
-  {
-    path: 'cart',
-    component: CartComponent,
-  },
-  {
-    path: 'shipping',
-    component: ShippingComponent,
-  },
+  // {
+  //   path: '',
+  //   component: ProductListComponent,
+  // },
+  // {
+  //   path: 'products/:productId',
+  //   component: ProductDetailsComponent,
+  // },
+  // {
+  //   path: 'cart',
+  //   component: CartComponent,
+  // },
+  // {
+  //   path: 'shipping',
+  //   component: ShippingComponent,
+  // },
 ];
 
 @NgModule({

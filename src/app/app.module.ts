@@ -13,6 +13,8 @@ import { ShippingComponent } from './shared/shipping/shipping.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HighlightDirective } from './directives/highlight.directive';
 import { AppUnlessDirective } from './directives/app-unless.directive';
+import { ParentComponent } from './shared/components/parent/parent.component';
+import { ChildComponent } from './shared/components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { AppUnlessDirective } from './directives/app-unless.directive';
     ShippingComponent,
     HighlightDirective,
     AppUnlessDirective,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
